@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.app_background{
+  background-color: grey;
+  display:flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.S_Container{
+  background-color: red;
+  width: 500px;
+
+  height: min-content;
+  border-radius: 5px ;
+  padding: 20px;
+  box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.4);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-item-box {
+  background: #fbc1bb;
+  color: red;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.add-item-box {
+  background: #fbc1bb;
+  color: #ec645b;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.add-item-box svg {
+  margin: 5px;
+}
+
+.add-Item-Input{
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  height: 30px;
+  color: #ec645b;
+  background: #fbc1bb;
+}
+
+input::placeholder {
+  color: #ec645b;
+}
+input:focus {
+  outline: 0;
+}
+.item_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item_container{
+  display:flex ;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px #fbc1bb solid;
+
+}
+
+.item-name {
+  cursor: pointer;
+}
+
+.item-name svg {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.quantity {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ec645b;
+  background: white;
+  border-radius: 50px;
+  font-size: 12px;
+  color: #ec645b;
+  min-width: 70px;
+  justify-content: space-between;
+}
+
+button {
+  background: transparent;
+  border: none;
+  margin: 3px;
+  color: #ec645b;
+}
+button:focus {
+  outline: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.checked {
+  text-decoration:line-through;
+}
+
+.totalcount{
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  
 }
